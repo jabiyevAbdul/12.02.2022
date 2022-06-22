@@ -1,0 +1,214 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.header {
+    padding: 26px 0;
+    background-color: black;
+
+}
+
+.header .menu ul {
+    list-style: none;
+}
+
+.header .g-text a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+
+.header .menu ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #E9204F;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease-in-out;
+}
+
+.header .menu ul li a:hover::before {
+    width: 50%;
+}
+.header .menu ul li .home::before {
+    content: "";
+    position: absolute;
+    width: 20px !important;
+    height: 2px;
+    background-color: #E9204F;
+    left: 0;
+    bottom: -5px;
+}
+
+.header .menu .icon i {
+    color: white;
+    margin-left: 25px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.digital {
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+    position: relative;
+}
+
+
+.digital .left h1 {
+    color: white;
+    position: relative;
+
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    width: 50%;
+    /* margin-top: 50px; */
+    padding-top: 130px;
+}
+.digital .left h1::before{
+    content: "";
+    position: absolute;
+     width: 70px !important;
+    height: 3px;
+    background-color: #E9204F;
+    left: 0;
+    top: 100px;
+
+}
+
+ 
+    .digital .left .btn2{
+        padding: 15px 30px;
+        text-decoration: none;
+        /* padding: 15px; */
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        /* border-radius: 8px; */
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        margin-top: 40px;
+        border: 2px solid #E9204F;
+
+    
+}
+.digital .left .btn2::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background-color: #E9204F;
+    color: red;
+    /* border-radius: 8px; */
+    transition: 0.4s ease-in-out;
+    z-index: -1;
+}
+.digital .left .btn2:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+.digital .right img{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+
+}
+.digital .digital-boxes .digital-box{
+   padding: 70px 30px;
+   position: relative;
+   text-align: left;
+   color: white;
+   width: 31%;
+   margin-top: 10%;
+   cursor: pointer;
+   margin-left: 20px;
+   background-color: #22211e;
+   background-color: #E9204F;
+}
+.digital .digital-boxes .digital-box2{
+    padding: 70px 30px;
+    position: relative;
+    text-align: left;
+    color: white;
+    width: 31%;
+    margin-top: 10%;
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: #22211e;
+}
+.digital .digital-boxes .digital-box3{
+    padding: 70px 30px;
+    position: relative;
+    text-align: left;
+    color: white;
+    width: 31%;
+    margin-top: 10%;
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: #22211e;
+}
+.digital .digital-boxes .digital-box i{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+.digital .digital-boxes .digital-box2 i{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+.digital .digital-boxes .digital-box h3{
+    font-family: "AvantGarde Bold", Sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4em;
+    
+}
+.digital .digital-boxes .digital-box p{
+    font-family: "Trade Gothic", Sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 35px;
+}
